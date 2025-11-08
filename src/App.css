@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+.pause-animation {
+  animation-play-state: paused !important;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 25s linear infinite;
+  white-space: nowrap;
+}
+
+.animate-marquee-reverse {
+  display: inline-flex;
+  animation: marquee-reverse 25s linear infinite;
+  white-space: nowrap;
+}
+
+.pause-animation {
+  animation-play-state: paused;
+}

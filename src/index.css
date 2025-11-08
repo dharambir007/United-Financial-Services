@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Add this to your global CSS file (e.g., index.css) */
+
+/* Defines the "left-to-right" animation */
+@keyframes marquee-ltr {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Defines the "right-to-left" animation (for potential future use) */
+@keyframes marquee-rtl {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+/* The class you will use in React for left-to-right */
+.animate-marquee-ltr {
+  animation: marquee-ltr 40s linear infinite;
+  will-change: transform;
+}
+
+/* The class for right-to-left */
+.animate-marquee-rtl {
+  animation: marquee-rtl 40s linear infinite;
+  will-change: transform;
+}
+
+/* This is for the pause-on-click you already had */
+.pause-animation {
+  animation-play-state: paused;
+}

@@ -13,6 +13,23 @@
   }
 }
 
+@media (max-width: 768px){
+  .animate-marquee-ltr{
+    animation-duration: 8s;
+  }
+}
+
+@media (max-width: 480px) {
+  .animate-marquee-ltr {
+    animation-duration: 6s;   /* ultra fast for very small screens */
+  }
+}
+
+/* Pause Animation Class */
+.pause-animation {
+  animation-play-state: paused !important;
+}
+
 @keyframes marquee-reverse {
   0% {
     transform: translateX(-50%);

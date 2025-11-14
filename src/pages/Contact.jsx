@@ -68,7 +68,7 @@ const Contact = () => {
   };
 
   return (
-  <div className="min-h-screen font-sans text-gray-800 bg-linear-to-br from-gray-50 to-blue-50">
+  <div className="min-h-screen font-sans text-gray-800 bg-linear-to-br from-gray-50 to-blue-50 pt-16">
       {/* Hero Header */}
       <motion.section
         initial={{ opacity: 0, y: -40 }}

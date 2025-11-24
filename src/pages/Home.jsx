@@ -114,7 +114,7 @@ const Home = () => {
     alert('Appointment request submitted! We will contact you soon.');
     setShowAppointmentModal(false);
   };
-
+  
   return (
     <div className="min-h-screen font-sans text-gray-800 bg-white">
       
@@ -678,6 +678,12 @@ const Footer = () => {
 };
 
 export default Home;
+
+
+
+
+
+
 
 
 
